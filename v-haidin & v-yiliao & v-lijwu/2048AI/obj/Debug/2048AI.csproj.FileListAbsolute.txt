@@ -1,0 +1,12 @@
+D:\SE\pairs\2048AI\bin\2048AI.dll.config
+D:\SE\pairs\2048AI\bin\2048AI.dll
+D:\SE\pairs\2048AI\bin\2048AI.pdb
+D:\SE\pairs\2048AI\obj\Debug\2048AI.csprojResolveAssemblyReference.cache
+D:\SE\pairs\2048AI\obj\Debug\2048AI.dll
+D:\SE\pairs\2048AI\obj\Debug\2048AI.pdb
+D:\Software Engineering\Haisong_Ding\2048AI\bin\2048AI.dll.config
+D:\Software Engineering\Haisong_Ding\2048AI\bin\2048AI.dll
+D:\Software Engineering\Haisong_Ding\2048AI\bin\2048AI.pdb
+D:\Software Engineering\Haisong_Ding\2048AI\obj\Debug\2048AI.dll
+D:\Software Engineering\Haisong_Ding\2048AI\obj\Debug\2048AI.pdb
+D:\Software Engineering\Haisong_Ding\2048AI\obj\Debug\2048AI.csprojResolveAssemblyReference.cache

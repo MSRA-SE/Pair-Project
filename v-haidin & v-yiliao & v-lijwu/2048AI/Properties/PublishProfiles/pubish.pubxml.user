@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\ServerRoot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api.ashx">
+      <publishTime>09/16/2014 16:04:49</publishTime>
+    </File>
+    <File Include="bin/2048AI.dll">
+      <publishTime>09/30/2014 11:56:22</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>09/16/2014 16:04:49</publishTime>
+    </File>
+    <File Include="js/ai.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/animframe_polyfill.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/application.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/bind_polyfill.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/classlist_polyfill.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/GameState.js">
+      <publishTime>09/30/2014 11:02:19</publishTime>
+    </File>
+    <File Include="js/game_manager.js">
+      <publishTime>09/29/2014 10:58:40</publishTime>
+    </File>
+    <File Include="js/grid.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/html_actuator.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/keyboard_input_manager.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/local_storage_manager.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="js/tile.js">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="meta/apple-touch-icon.png">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="meta/apple-touch-startup-image-640x1096.png">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="meta/apple-touch-startup-image-640x920.png">
+      <publishTime>09/16/2014 16:04:50</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/16/2014 16:04:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.js">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.min.js">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.min.map">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="style/font/clear-sans.css">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="style/font/ClearSans-Bold-webfont.svg">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="style/font/ClearSans-Light-webfont.svg">
+      <publishTime>09/16/2014 16:04:52</publishTime>
+    </File>
+    <File Include="style/font/ClearSans-Regular-webfont.svg">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="style/main.css">
+      <publishTime>09/16/2014 16:04:51</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/30/2014 10:02:05</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
