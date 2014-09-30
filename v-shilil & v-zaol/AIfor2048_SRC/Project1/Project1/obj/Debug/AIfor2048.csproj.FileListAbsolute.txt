@@ -1,0 +1,9 @@
+D:\ASE\project\AIfor2048\Project1\Project1\obj\Debug\AIfor2048.csprojResolveAssemblyReference.cache
+D:\ASE\project\AIfor2048\Project1\Project1\bin\Debug\Project1.exe.config
+D:\ASE\project\AIfor2048\Project1\Project1\bin\Debug\Project1.exe
+D:\ASE\project\AIfor2048\Project1\Project1\bin\Debug\Project1.pdb
+D:\ASE\project\AIfor2048\Project1\Project1\obj\Debug\Project1.exe
+D:\ASE\project\AIfor2048\Project1\Project1\obj\Debug\Project1.pdb
+C:\Users\v-shilil\Desktop\AIfor2048\Project1\Project1\bin\Debug\Project1.exe.config
+C:\Users\v-shilil\Desktop\AIfor2048\Project1\Project1\obj\Debug\Project1.exe
+C:\Users\v-shilil\Desktop\AIfor2048\Project1\Project1\obj\Debug\Project1.pdb

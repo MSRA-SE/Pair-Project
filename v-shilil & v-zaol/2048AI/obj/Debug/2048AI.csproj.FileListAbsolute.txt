@@ -1,0 +1,7 @@
+C:\Users\v-shilil\Desktop\2048AI\bin\2048AI.dll.config
+C:\Users\v-shilil\Desktop\2048AI\bin\2048AI.dll
+C:\Users\v-shilil\Desktop\2048AI\bin\2048AI.pdb
+C:\Users\v-shilil\Desktop\2048AI\obj\Debug\2048AI.csprojResolveAssemblyReference.cache
+C:\Users\v-shilil\Desktop\2048AI\obj\Debug\2048AI.dll
+C:\Users\v-shilil\Desktop\2048AI\obj\Debug\2048AI.pdb
+C:\Users\v-shilil\Desktop\2048AI\bin\Searcher.dll
