@@ -1,0 +1,6 @@
+D:\2048\bin\2048AI.dll.config
+D:\2048\bin\2048AI.dll
+D:\2048\bin\2048AI.pdb
+D:\2048\obj\Release\2048AI.dll
+D:\2048\obj\Release\2048AI.pdb
+D:\2048\obj\Release\2048AI.csprojResolveAssemblyReference.cache

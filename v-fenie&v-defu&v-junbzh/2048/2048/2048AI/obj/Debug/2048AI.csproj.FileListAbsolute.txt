@@ -1,0 +1,12 @@
+C:\Users\v-defu\Desktop\fdpan\2048AI\bin\2048AI.dll.config
+C:\Users\v-defu\Desktop\fdpan\2048AI\bin\2048AI.dll
+C:\Users\v-defu\Desktop\fdpan\2048AI\bin\2048AI.pdb
+C:\Users\v-defu\Desktop\fdpan\2048AI\obj\Debug\2048AI.csprojResolveAssemblyReference.cache
+C:\Users\v-defu\Desktop\fdpan\2048AI\obj\Debug\2048AI.dll
+C:\Users\v-defu\Desktop\fdpan\2048AI\obj\Debug\2048AI.pdb
+D:\code\2048\2048\2048AI\bin\2048AI.dll.config
+D:\code\2048\2048\2048AI\bin\2048AI.dll
+D:\code\2048\2048\2048AI\bin\2048AI.pdb
+D:\code\2048\2048\2048AI\obj\Debug\2048AI.csprojResolveAssemblyReference.cache
+D:\code\2048\2048\2048AI\obj\Debug\2048AI.dll
+D:\code\2048\2048\2048AI\obj\Debug\2048AI.pdb
