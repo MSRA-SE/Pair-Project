@@ -27,12 +27,10 @@ namespace _2048AI
                     grids[x, y] = cells[x * 4 + y];
                 }
             }
-            int dir = AINextMove1(grids);
+            int dir = AINextMove(grids);
             context.Response.Write(dir.ToString());
         }
 
-        private static int[,] LastGrids;
-        private static bool GoLeft;
         /// <summary>
         /// interface for your AI code 
         /// </summary>
@@ -41,60 +39,9 @@ namespace _2048AI
         /// <returns>1 for right </returns>
         /// <returns>2 for down </returns>
         /// <returns>3 for left</returns>
-        private int AINextMove1(int[,] grids)
+        private int AINextMove(int[,] grids)
         {
             return Core.GetProposeMove(grids);
-            //return new Random(DateTime.Now.Millisecond).Next() % 4;
-        }
-        private int AINextMove2(int[,] grids)
-        {
-            int next = 1;
-            if (LastGrids == null)
-            {
-                LastGrids = new int[4, 4];
-                for (int i = 0; i < 4; i++)
-                    for (int j = 0; j < 4; j++)
-                        LastGrids[i, j] = 0;
-                GoLeft = true;
-            }
-            if (IsEqualtoLast(grids))
-            {
-                next = new Random(DateTime.Now.Millisecond).Next() % 4;
-                //GoLeft = !GoLeft;
-            }
-               
-
-            else
-            {
-                if (GoLeft)
-                {
-                    GoLeft = false;
-                    next = 3;
-                }
-                else
-                {
-                    GoLeft = true;
-                    next = 2;
-                }
-            }
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 4; j++)
-                {
-                    LastGrids[i, j] = grids[i, j];
-                }
-            return next;
-            //return new Random(DateTime.Now.Millisecond).Next() % 4;
-        }
-
-        private bool IsEqualtoLast(int[,] grids)
-        {
-            for (int i = 0; i < 4; i++)
-                    for (int j = 0; j < 4; j++)
-                    {
-                        if (grids[i, j] != LastGrids[i, j])
-                            return false;
-                    }
-            return true;
         }
 
         public bool IsReusable

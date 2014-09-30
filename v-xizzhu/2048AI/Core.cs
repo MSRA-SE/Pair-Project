@@ -60,14 +60,6 @@ namespace _2048AI
             }
         }
 
-        public const double SCORE_LOST_PENALTY = 200000.0;
-        public const double SCORE_MONOTONICITY_POWER = 4.0;
-        public const double SCORE_MONOTONICITY_WEIGHT = 47.0;
-        public const double SCORE_SUM_POWER = 3.5;
-        public const double SCORE_SUM_WEIGHT = 11.0;
-        public const double SCORE_MERGES_WEIGHT = 700.0;
-        public const double SCORE_EMPTY_WEIGHT = 270.0;
-
         private static void _CacheScore()
         {
             for (int i = 0; i < 65536; i++)
@@ -77,78 +69,17 @@ namespace _2048AI
                 {
                     num[j] = (int)((i >> (j * 4)) & 0xf);
                 }
-                //// Heuristic score
-                //double sum = 0;
-                //int empty = 0;
-                //int merges = 0;
-
-                //int prev = 0;
-                //int counter = 0;
-                //for (int j = 0; j < 4; ++j)
-                //{
-                //    int rank = num[j];
-                //    sum += Math.Pow(rank, SCORE_SUM_POWER);
-                //    if (rank == 0)
-                //    {
-                //        empty++;
-                //    }
-                //    else
-                //    {
-                //        if (prev == rank)
-                //        {
-                //            counter++;
-                //        }
-                //        else if (counter > 0)
-                //        {
-                //            merges += 1 + counter;
-                //            counter = 0;
-                //        }
-                //        prev = rank;
-                //    }
-                //}
-                //if (counter > 0)
-                //{
-                //    merges += 1 + counter;
-                //}
-
-                //double monotonicity_left = 0;
-                //double monotonicity_right = 0;
-                //for (int j = 1; j < 4; ++j)
-                //{
-                //    if (num[j - 1] > num[j])
-                //    {
-                //        monotonicity_left += Math.Pow(num[j - 1], SCORE_MONOTONICITY_POWER) -
-                //            Math.Pow(num[j], SCORE_MONOTONICITY_POWER);
-                //    }
-                //    else
-                //    {
-                //        monotonicity_right += Math.Pow(num[j], SCORE_MONOTONICITY_POWER) -
-                //            Math.Pow(num[j - 1], SCORE_MONOTONICITY_POWER);
-                //    }
-                //}
-
-                //CacheScore[i] = SCORE_LOST_PENALTY +
-                //    SCORE_EMPTY_WEIGHT * empty +
-                //    SCORE_MERGES_WEIGHT * merges -
-                //    SCORE_MONOTONICITY_WEIGHT * Math.Min(monotonicity_left, monotonicity_right) -
-                //    SCORE_SUM_WEIGHT * sum;
-
-
+               
                 double score1 = 0;
                 double score2 = 0;
                 for (int j = 0; j < 3; j++)
                 {
                     if (num[j] == 0) continue;
                     int k = j + 1;
-                    //for (k = j + 1; k < 4; k++)
-                    //{
-                    //    if (num[k] != 0) break;
-                    //}
-                    //if (k == 4) break;
 
                     if (num[j] < num[k])
                     {
-                        score1 += Math.Pow(2, num[k]) * (num[k] - num[j]) * 9.5;//
+                        score1 += Math.Pow(2, num[k]) * (num[k] - num[j]) * 9.5;
                     }
                     else if (num[j] > num[k])
                     {
@@ -156,14 +87,14 @@ namespace _2048AI
                     }
                     else
                     {
-                        score1 -= 32;//5 * num[j];
-                        score2 -= 32;//5 * num[j];
+                        score1 -= 32;
+                        score2 -= 32;
                     }
                 }
                 CacheScore[i] = -Math.Min(score1, score2) * 48;
                 for (int j = 0; j < 4; j++)
                 {
-                    CacheScore[i] -= num[j] * num[j] * 220;//Math.Pow(num[j], 3.5) * 11;
+                    CacheScore[i] -= num[j] * num[j] * 220;
                 }
                 CacheScore[i] += CacheEmpty[i] * 300;
             }
@@ -303,12 +234,7 @@ namespace _2048AI
         private static double GetPanHeurScore(UInt64 grid)
         {
             double score = GetHeurScore(grid) ;
-            //StreamWriter sw = new StreamWriter(@"C:\Users\Einsiedler0408\Desktop\2048926\B.txt", true);
-            //sw.WriteLine(score);
-            //sw.Flush();
-            //sw.Close();
             return score - 20000000;
-            //return score > 0 ? 0.1 * score : 10 * score;
         }
         private static double GetAvgGridScore(UInt64 grid, double prob, int layer, Dictionary<UInt64, double> transTable)
         {
@@ -397,12 +323,6 @@ namespace _2048AI
                     n++;
             }
             return n - 4;
-            //for (int i = 4; i < 20; i++)
-            //{
-            //    if (count[i] == 0)
-            //        return (i - 3);
-            //}
-            //return -1;
         }
 
         public static int GetProposeMove(int[,] grids)
@@ -423,14 +343,6 @@ namespace _2048AI
                     score[i] = GetAvgGridScore(aftermove, 1, layers, TransTable[i]);
                 }
             });
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    if (aftermove[i] != grid)
-            //    {
-            //        score[i] = GetAvgGridScore(aftermove[i], 1, layers, TransTable[0]);
-            //    }
-            //}
-
 
             for (int i = 0; i < 4; i++)
             {
@@ -440,20 +352,7 @@ namespace _2048AI
                     direction = i;
                 }
             }
-            //for (int i = 0; i < 4; i++)
-            //{
-            //    UInt64 aftermove = Move(grid, i);
-            //    if (aftermove == grid)
-            //        continue;
 
-            //    int layers = Math.Max(PredictLayer(grids), LayerThreshold);
-            //    double score = GetAvgGridScore(aftermove, 1, layers);
-            //    if (maxScore <= score)
-            //    {
-            //        maxScore = score;
-            //        direction = i;
-            //    }
-            //}
             for (int i = 0; i < 4; i++)
                 TransTable[i].Clear();
             return direction;
