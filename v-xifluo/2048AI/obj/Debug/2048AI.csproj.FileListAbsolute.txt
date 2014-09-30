@@ -1,0 +1,12 @@
+D:\Kara\ASE\Pair Project\Original\bin\2048AI.dll.config
+D:\Kara\ASE\Pair Project\Original\bin\2048AI.dll
+D:\Kara\ASE\Pair Project\Original\bin\2048AI.pdb
+D:\Kara\ASE\Pair Project\Original\obj\Debug\2048AI.csprojResolveAssemblyReference.cache
+D:\Kara\ASE\Pair Project\Original\obj\Debug\2048AI.dll
+D:\Kara\ASE\Pair Project\Original\obj\Debug\2048AI.pdb
+D:\Kara\ASE\GitHub\Pair-Project\v-xifluo\2048AI\bin\2048AI.dll.config
+D:\Kara\ASE\GitHub\Pair-Project\v-xifluo\2048AI\bin\2048AI.dll
+D:\Kara\ASE\GitHub\Pair-Project\v-xifluo\2048AI\bin\2048AI.pdb
+D:\Kara\ASE\GitHub\Pair-Project\v-xifluo\2048AI\obj\Debug\2048AI.csprojResolveAssemblyReference.cache
+D:\Kara\ASE\GitHub\Pair-Project\v-xifluo\2048AI\obj\Debug\2048AI.dll
+D:\Kara\ASE\GitHub\Pair-Project\v-xifluo\2048AI\obj\Debug\2048AI.pdb
