@@ -1,0 +1,6 @@
+D:\code\2048DataGenerate\2048\bin\Release\2048.exe.config
+D:\code\2048DataGenerate\2048\bin\Release\2048.exe
+D:\code\2048DataGenerate\2048\bin\Release\2048.pdb
+D:\code\2048DataGenerate\2048\obj\Release\2048.csprojResolveAssemblyReference.cache
+D:\code\2048DataGenerate\2048\obj\Release\2048.exe
+D:\code\2048DataGenerate\2048\obj\Release\2048.pdb
